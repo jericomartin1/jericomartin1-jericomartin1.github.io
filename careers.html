@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BellyBelles Coffee</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+        <h2 class="logo-text"><img src="imgs/logo inverse.png">BellyBelles</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="login.html" class="nav-link" id="loginBtn"><img src="imgs/log in.png" width="24" alt="Log In"></a></li>
+        <li><a href="#" class="nav-link cart-link" id="cartToggle"><img src="imgs/shopping cart.png" width="24" alt="Cart"><span class="cart-badge" id="cartCount">0</span></a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" aria-label="Close Cart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: ₱0</div>
+      <a href="checkout.html">
+      <button class="checkout-btn">Checkout</button>
+      </a>
+    </div>
+ 
+
+ <!-- Careers Section-->   
+ <section class="careers-section">
+    <div class="container">
+      <h2 class="section-title">Join Our Team</h2>
+      <p class="section-description">At BellyBelles Coffee, we're always looking for passionate people to join our growing family.</p>
+      
+      <div class="careers-grid">
+        <div class="career-card">
+          <h3>Barista</h3>
+          <p>Bring smiles to our customers by crafting delicious coffee with care, creativity, and attention to detail.</p>
+          <a href="https://www.facebook.com/bellybellescoffee" class="career-btn">Apply Now</a>
+        </div>
+      </div>
+  
+      <div class="careers-info">
+        <h3>Why Work With Us?</h3>
+        <p>We offer flexible scheduling and a supportive team environment where your contributions truly matter.</p>
+        <p style="margin-top: 15px;">Send your resume to <strong>bellybellescoffeerobantipolo@gmail.com</strong></p>
+      </div>
+    </div>
+  </section>
+
+<!-- ========== FOOTER INFO ========== -->
+  <section class="footer-info">
+    <div class="footer-container">
+      <div class="footer-logo" data-aos="fade-up">
+        <img src="imgs/logo1.png" alt="BellyBelles Logo" />
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+          <h3>Our Company</h3>
+          <ul>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="franchising.html">Franchising</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+          <h3>Site Terms</h3>
+          <ul>
+            <li><a href="termsofservice.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li><a href="https://www.facebook.com/profile.php?id=100093797695256"><img src="imgs/facebooklogo.png" height="auto" width="10%"></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 BellyBelles Coffee. All rights reserved.</p>
+  </footer>
+
+  <script src="shoppingcart.js"></script>
+
+  
+</body>
+</html>

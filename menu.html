@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BellyBelles Coffee - Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Miniver&display=swap" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+        <h2 class="logo-text"><img src="imgs/logo inverse.png">BellyBelles</h2>
+      </a>
+      <ul class="nav-menu">
+        
+        <li><a href="login.html" class="nav-link"><img src="imgs/log in.png" width="24" alt="Log In"></a></li>
+        <li><a href="#" class="nav-link cart-link" id="cartToggle"><img src="imgs/shopping cart.png" width="24" alt="Cart"><span class="cart-badge" id="cartCount">0</span></a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" aria-label="Close Cart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: ₱0</div>
+      <a href="checkout.html">
+      <button class="checkout-btn">Checkout</button>
+      </a>
+    </div>
+    
+<!-- Menu Section-->
+  <div class="menu-wrapper">
+    <aside class="side-nav">
+      <h3>Drinks</h3>
+      <ul>
+        <li><a href="menu/hotcoffee.html">Hot Coffee</a></li>
+        <li><a href="menu/coldcoffee.html">Iced Coffee</a></li>
+        <li><a href="menu/noncoffee&tea.html">Non-Coffee & Tea</a></li>
+        <li><a href="menu/frappes.html">Frappes</a></li>
+      </ul>
+      
+    </aside>
+
+
+    <main class="menu-content">
+      <h1>Our Menu</h1>
+        <h2>Drinks</h2>
+        <div class="category-grid">
+          <a href="menu/hotcoffee.html" class="category-card">
+            <img src="imgs/barako.png" alt="Hot Coffee">
+            <span>Hot Coffee</span>
+          </a>
+          <a href="menu/coldcoffee.html" class="category-card">
+            <img src="imgs/icedcaramelmacchiato.png" alt="Cold Coffee">
+            <span>Iced Coffee</span>
+          </a>
+          <a href="menu/noncoffee&tea.html" class="category-card">
+            <img src="imgs/hotchocolate.png" alt="Iced Energy">
+            <span>Non-Coffee & Tea</span>
+          </a>
+          <a href="menu/frappes.html" class="category-card">
+            <img src="imgs/houseblendfrappe.png" alt="Frappuccino®">
+            <span>Frappes</span>
+          </a>
+
+        </div>
+    </main>
+  </div>
+
+<!-- ========== FOOTER INFO ========== -->
+  <section class="footer-info">
+    <div class="footer-container">
+      <div class="footer-logo" data-aos="fade-up">
+        <img src="imgs/logo1.png" alt="BellyBelles Logo" />
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+          <h3>Our Company</h3>
+          <ul>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="franchising.html">Franchising</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+          <h3>Site Terms</h3>
+          <ul>
+            <li><a href="termsofservice.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li><a href="https://www.facebook.com/profile.php?id=100093797695256"><img src="imgs/facebooklogo.png" height="auto" width="10%"></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<footer>
+  <p>&copy; 2025 BellyBelles Coffee. All rights reserved.</p>
+</footer>
+
+
+  <script src="shoppingcart.js"></script>
+</body>
+</html>

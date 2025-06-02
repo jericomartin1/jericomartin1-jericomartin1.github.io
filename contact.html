@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BellyBelles Coffee</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  
+    section iframe {
+    display: block;
+    margin: 0 auto;
+    }
+
+    iframe {
+      border: 0;
+      width: 80%;
+      height: 450px;
+      border-radius: 5px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  
+
+  </style></head>
+<body>
+
+  <!-- Header / Nav -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+        <h2 class="logo-text"><img src="imgs/logo inverse.png">BellyBelles</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="login.html" class="nav-link"><img src="imgs/log in.png" width="24" alt="Log In"></a></li>
+        <li><a href="#" class="nav-link cart-link" id="cartToggle"><img src="imgs/shopping cart.png" width="24" alt="Cart"><span class="cart-badge" id="cartCount">0</span></a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" aria-label="Close Cart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: ₱0</div>
+      <a href="checkout.html">
+      <button class="checkout-btn">Checkout</button>
+      </a>
+    </div>
+  
+  <!-- Contact Section -->
+  <div class="contact-info centered-contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-details">
+      <p><strong>📍 Address:</strong><br>B36 L44 Marjoram St. Robinsons Homes East, Barangay San Jose 1870 Antipolo, Philippines</p>
+  <section >
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4650.642342735165!2d121.18522367579729!3d14.582539877517185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bff4f99719af%3A0xf5fdb516082537!2sBellybelles%20Coffee%20Robinsons%20Homes%20Antipolo!5e1!3m2!1sen!2sph!4v1745294062355!5m2!1sen!2sph" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </section>
+      <p><strong>📞 Phone:</strong><br>0968 767 6294</p>
+      <p><strong>📧 Email:</strong><br><a href="mailto:bellybellescoffee@gmail.com">bellybellescoffee@gmail.com</a></p>
+    </div>
+  </div>
+
+ 
+  <div class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form action="mailto:hello@bellybellescoffee.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+<!-- ========== FOOTER INFO ========== -->
+<section class="footer-info">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="imgs/logo1.png" alt="BellyBelles Logo" />
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h3>Our Company</h3>
+        <ul>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="franchising.html">Franchising</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Site Terms</h3>
+        <ul>
+          <li><a href="termsofservice.html">Terms of Use</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100093797695256">
+              <img src="imgs/facebooklogo.png" alt="Facebook" class="social-icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>&copy; 2025 BellyBelles Coffee. All rights reserved.</p>
+</footer>
+
+  <script src="shoppingcart.js"></script>
+</body>
+</html>

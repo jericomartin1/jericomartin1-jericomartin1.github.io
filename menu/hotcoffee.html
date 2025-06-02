@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BellyBelles Coffee - Menu</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Miniver&display=swap" rel="stylesheet">
+  <script src="../shoppingcart.js" defer></script>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <nav class="navbar">
+      <a href="../index.html" class="nav-logo">
+        <h2 class="logo-text"><img src="../imgs/logo inverse.png">BellyBelles</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="login.html" class="nav-link"><img src="../imgs/log in.png" width="24" alt="Log In"></a></li>
+        <li><a href="#" class="nav-link cart-link" id="cartToggle"><img src="../imgs/shopping cart.png" width="24" alt="Cart"><span class="cart-badge" id="cartCount">0</span></a></li>
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="../menu.html" class="nav-link">Menu</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" aria-label="Close Cart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: ₱0</div>
+      <a href="../checkout.html">
+      <button class="checkout-btn">Checkout</button>
+      </a>
+    </div>
+  
+    <!-- Menu Section-->
+  <div class="menu-wrapper">
+
+    <aside class="side-nav">
+      <h3>Drinks</h3>
+      <ul>
+        <li><a href="../menu/hotcoffee.html">Hot Coffee</a></li>
+        <li><a href="../menu/coldcoffee.html">Iced Coffee</a></li>
+        <li><a href="../menu/noncoffee&tea.html">Non-Coffee & Tea</a></li>
+        <li><a href="../menu/frappes.html">Frappes</a></li>
+      </ul>
+      
+    </aside>
+
+  
+    <main class="menu-content">
+      <h1>Our Menu</h1>
+
+  
+
+        <h2>BIG BLACK CUP (Drip Based)</h2> 
+        <div class="category-grid">
+          <a href="../menu/hotcoffee-bigblackcup/barako.html" class="category-card">
+            <img src="../imgs/barako.png" alt="Hot Coffee">
+            <span>Barako</span>
+          </a>
+          <a href="../menu/hotcoffee-bigblackcup/robusta.html" class="category-card">
+            <img src="../imgs/robusta.png" alt="Cold Coffee">
+            <span>Robusta</span>
+          </a>
+          <a href="../menu/hotcoffee-bigblackcup/kalinga.html" class="category-card">
+            <img src="../imgs/kalinga.png" alt="Iced Energy">
+            <span>Kalinga</span>
+          </a>
+          <a href="../menu/hotcoffee-bigblackcup/benguet.html" class="category-card">
+            <img src="../imgs/benguet.png" alt="Hot Tea">
+            <span>Benguet</span>
+          </a>
+
+        </div>
+        <h2>Espresso Based</h2>
+        <div class="category-grid">
+          <a href="../menu/hotcoffee-espressobased/americano.html" class="category-card">
+            <img src="../imgs/americano.png" alt="Hot Coffee">
+            <span>Americano</span>
+          </a>
+          <a href="../menu/hotcoffee-espressobased/cafelatte.html" class="category-card">
+            <img src="../imgs/cafelatte.png" alt="Cold Coffee">
+            <span>Cafe Latte</span>
+          </a>
+        
+          <a href="../menu/hotcoffee-espressobased/spanishlatte.html" class="category-card">
+            <img src="../imgs/spanishlatte.png" alt="Hot Tea">
+            <span>Spanish Latte</span>
+          </a>
+          <a href="../menu/hotcoffee-espressobased/caramelmacchiato.html" class="category-card">
+            <img src="../imgs/caramelmacchiato.png" alt="Frappuccino®">
+            <span>Caramel Macchiato</span>
+          </a>
+          <a href="../menu/hotcoffee-espressobased/hazelnutmacchiato.html" class="category-card">
+            <img src="../imgs/hazelnutmacchiato.png" alt="Frappuccino®">
+            <span>Hazelnut Macchiato</span>
+          </a>
+          <a href="../menu/hotcoffee-espressobased/whitechocolatemocha.html" class="category-card">
+            <img src="../imgs/whitechocolatemocha.png" alt="Frappuccino®">
+            <span>White Chocolate Mocha</span>
+          </a>
+          <a href="../menu/hotcoffee-espressobased/butterscotchlatte.html" class="category-card">
+            <img src="../imgs/butterscotchlatte.png" alt="Frappuccino®">
+            <span>Butterscotch Latte</span>
+          </a>
+
+        </div>
+
+
+
+    </main>
+  </div>
+
+<!-- ========== FOOTER INFO ========== -->
+<section class="footer-info">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="../../imgs/logo1.png" alt="BellyBelles Logo" />
+    </div>
+
+      <div class="footer-links">
+      <div class="footer-column">
+        <h3>Our Company</h3>
+        <ul>
+          <li><a href="../../careers.html">Careers</a></li>
+          <li><a href="../../franchising.html">Franchising</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Site Terms</h3>
+        <ul>
+          <li><a href="../../termsofservice.html">Terms of Use</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="../../contact.html">Contact Us</a></li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100093797695256">
+              <img src="../../imgs/facebooklogo.png" alt="Facebook" class="social-icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 BellyBelles Coffee. All rights reserved.</p>
+</footer>
+
+
+  <!--js for cart-->
+ 
+</body>
+</html>

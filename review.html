@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Order - BellyBelles Coffee</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+        <h2 class="logo-text"><img src="imgs/logo inverse.png" alt="BellyBelles">BellyBelles</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="login.html" class="nav-link" id="loginBtn"><img src="imgs/log in.png" width="24" alt="Log In"></a></li>
+        <li><a href="#" class="nav-link cart-link" id="cartToggle"><img src="imgs/shopping cart.png" width="24" alt="Cart"><span class="cart-badge" id="cartCount">0</span></a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="review-container">
+    <div class="review-wrapper">
+    <h1>Review Your Order</h1>
+    <p><strong>Payment Method:</strong> <span id="paymentMethod"></span></p>
+    <p><strong>Order Details:</strong></p>
+    <div id="orderDetails"></div>
+    <button id="confirmOrder">Confirm Order</button>
+    </div>
+  </div>
+
+
+
+  <section class="footer-info">
+    <div class="footer-container">
+      <div class="footer-logo" data-aos="fade-up">
+        <img src="imgs/logo1.png" alt="BellyBelles Logo" />
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+          <h3>Our Company</h3>
+          <ul>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="franchising.html">Franchising</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+          <h3>Site Terms</h3>
+          <ul>
+            <li><a href="termsofservice.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li><a href="https://www.facebook.com/profile.php?id=100093797695256"><img src="imgs/facebooklogo.png" height="auto" width="10%"></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 BellyBelles Coffee. All rights reserved.</p>
+  </footer>
+
+
+  <script src="shoppingcart.js"></script>
+
+</body>
+</html>

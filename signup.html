@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BellyBelles Coffee</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+        <h2 class="logo-text"><img src="imgs/logo inverse.png">BellyBelles</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="javascript:void(0)" class="nav-link" id="loginBtn"><img src="imgs/log in.png" width="24" alt="Log In"></a></li>
+        <li><a href="#" class="nav-link cart-link" id="cartToggle"><img src="imgs/shopping cart.png" width="24" alt="Cart"><span class="cart-badge" id="cartCount">0</span></a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" aria-label="Close Cart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: ₱0</div>
+      <a href="checkout.html">
+      <button class="checkout-btn">Checkout</button>
+      </a>
+    </div>
+  
+ 
+<!-- Signup-->
+<div class="signup-card">
+    <div class="signup-image">
+      <img src="imgs/logo1.png" alt="Cafe Image">
+    </div>
+    <div class="signup-form">
+      <h1>Belly Belles</h1>
+      <p>Sign Up</p>
+      <form action="#" method="post">
+
+        <input type="email" name="email" placeholder="Email" required 
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+        title="Enter a valid email address with an '@' and domain">
+
+        <input type="password" name="password" placeholder="Password" required
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+        title="Password must be at least 8 characters long and include uppercase, lowercase, number, and special character">
+
+        <input type="text" name="address" placeholder="Address" required>
+
+        <input type="tel" name="phone" placeholder="Phone Number" required 
+        pattern="^(09\d{9})$" 
+        title="Enter a valid 11-digit Philippine mobile number starting with 09">
+
+        <div class="terms">
+          <label class="terms-label">
+            <input type="checkbox" id="terms" name="terms" required>
+            <span>I agree to the <a href="termsofservice.html">Terms and Conditions</a></span>
+          </label>
+        </div>  
+
+        <button type="submit">Continue →</button>
+      </form>
+      <p class="signin-text">Already have an account? <a href="login.html"> Login</a></p>
+    </div>
+  </div>
+
+
+
+<!-- ========== FOOTER INFO ========== -->
+  <section class="footer-info">
+    <div class="footer-container">
+      <div class="footer-logo" data-aos="fade-up">
+        <img src="imgs/logo1.png" alt="BellyBelles Logo" />
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="100">
+          <h3>Our Company</h3>
+          <ul>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="franchising.html">Franchising</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+          <h3>Site Terms</h3>
+          <ul>
+            <li><a href="termsofservice.html">Terms of Use</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+          <h3>Customer Care</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li><a href="https://www.facebook.com/profile.php?id=100093797695256"><img src="imgs/facebooklogo.png" height="auto" width="10%"></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <p>&copy; 2025 BellyBelles Coffee. All rights reserved.</p>
+</footer>
+
+  <script src="shoppingcart.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BellyBelles Coffee</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+        <h2 class="logo-text"><img src="imgs/logo inverse.png">BellyBelles</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="login.html" class="nav-link" id="loginBtn"><img src="imgs/log in.png" width="24" alt="Log In"></a></li>
+        <li><a href="#" class="nav-link cart-link" id="cartToggle"><img src="imgs/shopping cart.png" width="24" alt="Cart"><span class="cart-badge" id="cartCount">0</span></a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" aria-label="Close Cart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: ₱0</div>
+      <a href="checkout.html">
+      <button class="checkout-btn">Checkout</button>
+      </a>
+    </div>
+  
+ 
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="tagline">BellyBelles Coffee</span>
+      <h1>Make your day great with our<br> special coffee!</h1>
+      <p>"Once you go to BBC, you will always come back."<br>A story and every cup sparks joy.</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn-primary">Order Now</a>
+        <a href="contact.html" class="btn-outline">Contact Us</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      
+      <img src="imgs/heropic.jpg" alt="Coffee Splash" />
+      
+    </div>
+  </section>
+ 
+
+
+<!-- ========== OUR STORY SECTION ========== -->
+<section id="our-story" class="story-section">
+  <div class="story-container">
+    <div class="story-text">
+      <h4>OUR STORY</h4>
+      <h2>From a Dream to Every Cup</h2>
+      <p>
+        BellyBelles Coffee began with a simple idea: to create a place where every cup tells a story. 
+        From sourcing the finest beans to crafting unique blends, we believe coffee is more than a drink — 
+        it's a connection, a memory, an experience. Visit us and become part of our journey.
+      </p>
+      <a href="about.html" class="story-btn">Learn More</a>
+    </div>
+    <div class="story-image">
+      <img src="imgs/tea.jpg" alt="Our Story Image">
+    </div>
+  </div>
+</section>
+  <!-- ========== OUR STORE SECTION ========== -->
+
+<section id="our-store" class="store-section">
+  <div class="store-header">
+    <h4>VISIT US</h4>
+    <h2>Our Store</h2>
+  </div>
+
+  <div class="store-slider">
+    <div class="slider-track">
+      <div class="slide"><img src="imgs/store1.jpg" alt="Store 1"></div>
+      <div class="slide"><img src="imgs/store2.jpg" alt="Store 2"></div>
+      <div class="slide"><img src="imgs/store3.jpg" alt="Store 3"></div>
+      <div class="slide"><img src="imgs/store4.jpg" alt="Store 4"></div>
+      <div class="slide"><img src="imgs/store5.jpg" alt="Store 5"></div>
+      <div class="slide"><img src="imgs/store6.jpg" alt="Store 5"></div>
+      <div class="slide"><img src="imgs/store7.jpg" alt="Store 5"></div>
+      <div class="slide"><img src="imgs/store8.jpg" alt="Store 5"></div>
+      <!-- loop  -->
+      <div class="slide"><img src="imgs/store1.jpg" alt="Store 1"></div>
+      <div class="slide"><img src="imgs/store2.jpg" alt="Store 2"></div>
+      <div class="slide"><img src="imgs/store3.jpg" alt="Store 3"></div>
+      <div class="slide"><img src="imgs/store4.jpg" alt="Store 4"></div>
+      <div class="slide"><img src="imgs/store5.jpg" alt="Store 5"></div>
+      <div class="slide"><img src="imgs/store6.jpg" alt="Store 5"></div>
+      <div class="slide"><img src="imgs/store7.jpg" alt="Store 5"></div>
+      <div class="slide"><img src="imgs/store8.jpg" alt="Store 5"></div>
+    </div>
+  </div>
+
+  <div class="store-button-container">
+    <a href="storelocator.html" class="btn-primary store-button">Visit our store now</a>
+  </div>
+</section>
+
+
+
+<!-- ========== FOOTER INFO ========== -->
+<section class="footer-info">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="imgs/logo1.png" alt="BellyBelles Logo" />
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h3>Our Company</h3>
+        <ul>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="franchising.html">Franchising</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Site Terms</h3>
+        <ul>
+          <li><a href="termsofservice.html">Terms of Use</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100093797695256">
+              <img src="imgs/facebooklogo.png" alt="Facebook" class="social-icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 BellyBelles Coffee. All rights reserved.</p>
+</footer>
+
+  <script src="shoppingcart.js"></script>
+
+  
+</body>
+</html>

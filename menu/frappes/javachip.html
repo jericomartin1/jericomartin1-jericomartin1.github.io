@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BellyBelles Coffee - Java Chip</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Miniver&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <a href="../../index.html" class="nav-logo">
+        <h2 class="logo-text"><img src="../../imgs/logo inverse.png" alt="BellyBelles Coffee Logo" />BellyBelles</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link"><img src="../../imgs/log in.png" width="24" alt="Log In" /></a></li>
+        <li><a href="#" class="nav-link cart-link" id="cartToggle"><img src="../../imgs/shopping cart.png" width="24" alt="Cart" /><span class="cart-badge" id="cartCount">0</span></a></li>
+        <li><a href="../../index.html" class="nav-link">Home</a></li>
+        <li><a href="../../about.html" class="nav-link">About</a></li>
+        <li><a href="../../menu.html" class="nav-link">Menu</a></li>
+        <li><a href="../../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="../../menu.html">Menu</a> / <a href="../frappes.html">Frappes</a> / <span>Java Chip</span>
+  </nav>
+
+  <!-- Product Page -->
+  <div class="product-page">
+    <div class="product-image">
+      <img src="../../imgs/javachipfrappe.png" alt="Java Chip" />
+    </div>
+    <div class="product-info" data-name="Java Chip">
+      <h1>Java Chip <span class="coffee-symbol-menu">Espresso based</span></h1>
+      <div class="price" id="priceDisplay">₱149</div>
+      <p class="description">A delectable mocha frappe blended with chocolate chips and coffee, giving you the perfect balance of sweet and bold. Topped with whipped cream for the ultimate treat!</p>
+
+      <!-- Size Options -->
+      <div class="size-group">
+        <label><input type="radio" name="size" value="Regular" data-price="149" checked /> Regular (₱149)</label><br>
+        <label><input type="radio" name="size" value="Biggie" data-price="165" /> Biggie (₱165)</label>
+      </div>
+
+      <!-- Quantity -->
+      <div class="qty-group">
+        <label for="qty">Quantity:</label>
+        <input type="number" id="qty" min="1" value="1" />
+      </div>
+
+      <!-- Add-ons -->
+      <div class="addons-group">
+        <h3>Add-Ons</h3>
+        <div class="addon-item"><label><input type="checkbox" class="addon-checkbox" data-name="Espresso Shot" data-price="40" /> Espresso Shot (₱40)</label></div>
+        <div class="addon-item"><label><input type="checkbox" class="addon-checkbox" data-name="Whipped Cream" data-price="30" /> Whipped Cream (₱30)</label></div>
+        <div class="addon-item"><label><input type="checkbox" class="addon-checkbox" data-name="Chocolate Chips" data-price="25" /> Extra Chocolate Chips (₱25)</label></div>
+        <div class="addon-item"><label><input type="checkbox" class="addon-checkbox" data-name="Chocolate Syrup" data-price="25" /> Extra Chocolate Syrup (₱25)</label></div>
+        <div class="addon-item"><label><input type="checkbox" class="addon-checkbox" data-name="Milk" data-price="30" /> Milk (₱30)</label></div>
+        <div class="addon-item"><label><input type="checkbox" class="addon-checkbox" data-name="Chia Seeds" data-price="20" /> Chia Seeds (₱20)</label></div>
+      </div>
+
+      <button id="addToCart" class="add-btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Cart Panel -->
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" aria-label="Close Cart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: ₱0</div>
+      <a href="../../checkout.html">
+      <button class="checkout-btn">Checkout</button>
+      </a>
+    </div>
+
+<!-- ========== FOOTER INFO ========== -->
+<section class="footer-info">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="../../imgs/logo1.png" alt="BellyBelles Logo" />
+    </div>
+
+      <div class="footer-links">
+      <div class="footer-column">
+        <h3>Our Company</h3>
+        <ul>
+          <li><a href="../../careers.html">Careers</a></li>
+          <li><a href="../../franchising.html">Franchising</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Site Terms</h3>
+        <ul>
+          <li><a href="../../termsofservice.html">Terms of Use</a></li>
+          <li><a href="../../privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="../../contact.html">Contact Us</a></li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100093797695256">
+              <img src="../../imgs/facebooklogo.png" alt="Facebook" class="social-icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 BellyBelles Coffee. All rights reserved.</p>
+</footer>
+
+  <!-- JS -->
+  <script src="../../shoppingcart.js" defer></script>
+</body>
+</html>
